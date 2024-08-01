@@ -17,18 +17,24 @@
       </q-item>
     </q-list>
     <div class="additional-text">
-      <p>Lanzamiento y Creación:Fecha de lanzamiento: Club Penguin fue lanzado el 24 de octubre de 2005.
-Desarrollador: Fue creado por New Horizon Interactive, una compañía canadiense que luego se convirtió en Disney Canada Inc.</p>
-      <p>Adquisición por Disney:En agosto de 2007, Disney adquirió Club Penguin por $700 millones. Esta adquisición ayudó a expandir la audiencia del juego y a mejorar su infraestructura en dispositivos móviles.</p>
-      <p>Popularidad:Usuarios registrados: En su apogeo, Club Penguin tenía más de 200 millones de cuentas registradas.
-        Idioma: El juego estaba disponible en múltiples idiomas, incluyendo inglés, español, francés, portugués y alemán, lo que permitió una base de jugadores global.</p>
-      <p>Monetización:Membresías: Aunque el juego básico era gratuito, Club Penguin ofrecía membresías pagadas que daban a los jugadores acceso a ropa, mascotas y muebles exclusivos.
-        Microtransacciones: Los jugadores podían comprar monedas virtuales con dinero real para gastar en artículos dentro del juego.</p>
-      <p>Mascotas Puffles:Introducción: Los puffles, pequeñas criaturas peludas, fueron introducidos en el juego como mascotas que los jugadores podían adoptar.
-        Variedad: Había diferentes colores y tipos de puffles, cada uno con su propia personalidad y habilidades.</p> 
-      <p>Eventos Especiales:Club Penguin organizaba eventos y fiestas temáticas mensuales, como la Fiesta de Halloween, la Fiesta de Navidad y la Fiesta Medieval. Estos eventos incluían decoraciones especiales, minijuegos y artículos exclusivos.</p>
-      <p>Cierre del Juego:Fecha de cierre: Club Penguin cerró oficialmente el 29 de marzo de 2017.
-        Razón: El cierre se debió a una disminución en la popularidad del juego y a la transición hacia una nueva plataforma, Club Penguin Island, que también cerró en diciembre de 2018.</p>  
+      <p>Lanzamiento y Creación: Fecha de lanzamiento: Club Penguin fue lanzado el 24 de octubre de 2005. Desarrollador: Fue creado por New Horizon Interactive, una compañía canadiense que luego se convirtió en Disney Canada Inc.</p>
+      <p>Adquisición por Disney: En agosto de 2007, Disney adquirió Club Penguin por $700 millones. Esta adquisición ayudó a expandir la audiencia del juego y a mejorar su infraestructura en dispositivos móviles.</p>
+      <p>Popularidad: Usuarios registrados: En su apogeo, Club Penguin tenía más de 200 millones de cuentas registradas. Idioma: El juego estaba disponible en múltiples idiomas, incluyendo inglés, español, francés, portugués y alemán, lo que permitió una base de jugadores global.</p>
+      <p>Monetización: Membresías: Aunque el juego básico era gratuito, Club Penguin ofrecía membresías pagadas que daban a los jugadores acceso a ropa, mascotas y muebles exclusivos. Microtransacciones: Los jugadores podían comprar monedas virtuales con dinero real para gastar en artículos dentro del juego.</p>
+      <p>Mascotas Puffles: Introducción: Los puffles, pequeñas criaturas peludas, fueron introducidos en el juego como mascotas que los jugadores podían adoptar. Variedad: Había diferentes colores y tipos de puffles, cada uno con su propia personalidad y habilidades.</p> 
+      <p>Eventos Especiales: Club Penguin organizaba eventos y fiestas temáticas mensuales, como la Fiesta de Halloween, la Fiesta de Navidad y la Fiesta Medieval. Estos eventos incluían decoraciones especiales, minijuegos y artículos exclusivos.</p>
+      <p>Cierre del Juego: Fecha de cierre: Club Penguin cerró oficialmente el 29 de marzo de 2017. Razón: El cierre se debió a una disminución en la popularidad del juego y a la transición hacia una nueva plataforma, Club Penguin Island, que también cerró en diciembre de 2018.</p>
+        
+      <div class="additional-images">
+        <div class="image-container">
+          <q-img src="https://pbs.twimg.com/media/ErZ3eSFUYAAOKKN.png" alt="Rockhopper"></q-img>
+          <div class="image-text">Rockhopper</div>
+        </div>
+        <div class="image-container">
+          <q-img src="https://clubpenguingelado.wordpress.com/wp-content/uploads/2010/04/tia-artic-copy.jpg" alt="Tía Artic"></q-img>
+          <div class="image-text">Tía Artic</div>
+        </div>
+      </div>   
     </div>
   </q-page>
 </template>
@@ -81,11 +87,9 @@ export default {
   text-align: center; /* Centra el texto horizontalmente */
 }
 
-/*Posdata para el señor Ariel Onoriaga: No me pegues por dejar comentado el codigo, es para acordarme que hace cada cosa :v*/
-
 .additional-text {
   margin-top: 24px; /* Espacio superior para separar del contenido anterior */
-  text-align: left; /* Centra el texto horizontalmente */
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .title-main {
@@ -98,6 +102,36 @@ export default {
   text-align: center; /* Centra el título y subtítulo */
 }
 
+.additional-images {
+  display: flex;
+  flex-direction: column; /* Alinea las imágenes verticalmente */
+  align-items: left; /* Centra las imágenes horizontalmente */
+  margin-top: 16px; /* Espacio superior para separar del texto */
+}
+
+.image-container {
+  position: relative;
+  width: 300px; /* Ajusta el ancho del contenedor */
+  margin-bottom: 16px; /* Espacio entre los contenedores */
+}
+
+.image-container .q-img {
+  width: 100%; /* Ajusta la imagen al contenedor */
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 5px;
+  font-size: 18px;
+  text-align: center;
+}
 </style>
+
 
 
